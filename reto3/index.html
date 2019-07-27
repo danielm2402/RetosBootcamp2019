@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Reto 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body style="background-color: black">
+    <div class="catalogo">
+        <div class="botones">
+            <a class="boton" href="" onclick="formSelected('form1',event)"> 1</a>
+            <a class="boton" href="" onclick="formSelected('form2',event)">2</a>
+            <a class="boton" href="" onclick="formSelected('form3',event)"> 3</a>
+            <a class="boton" href="" onclick="formSelected('form4',event)"> 4</a>
+            <a class="boton" href="" onclick="formSelected('form5',event)"> 5</a>
+            <a class="boton" href="" onclick="formSelected('form6',event)"> 6</a>
+            <a class="boton" href="" onclick="formSelected('form7',event)"> 7</a>
+            <a class="boton" href="" onclick="formSelected('form8',event)"> 8</a>
+            <a class="boton" href="" onclick="formSelected('form9',event)"> 9</a>
+            <a class="boton" href="" onclick="formSelected('form10',event)"> 10</a>
+            <a class="boton" href="" onclick="formSelected('form11',event)"> 11</a>
+            <a class="boton" href="" onclick="formSelected('form12',event)"> 12</a>
+            <a class="boton" href="" onclick="formSelected('form13',event)"> 13</a>
+            <a class="boton" href="" onclick="formSelected('form14',event)">14</a>
+        </div>
+    </div>
+
+    <div class="formularios">
+        <div id="form1" style="display: none;">
+            <div>
+                <div class="texts">
+                    <input type="text" class="text" id="txtSalario" placeholder="Salario">
+                </div>
+
+            </div>
+            <div>
+                <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio1()"> Enviar </button>
+            </div>
+            <div id="rEjercicio1">
+                <p>El nuevo salario es: </p>
+                <h2 id="rSalario"></h2>
+            </div>
+
+
+
+        </div>
+        <div id="form2" style="display: none;">
+            <div>
+                <div class="texts">
+                    <input type="text" class="text" id="txtTerminos" placeholder="Numero Parámetros">
+                </div>
+
+            </div>
+            <div>
+                <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio2()"> Enviar </button>
+            </div>
+            <div id="rEjercicio2" style="display: none;">
+                <p>El resultado es: </p>
+                <h2 id="rPi"></h2>
+            </div>
+
+
+
+        </div>
+        <div id="form3" style="display: none;">
+            <div>
+                <div class="texts">
+                    <input type="text" class="text" id="txtN" placeholder="Digite N">
+                </div>
+
+            </div>
+            <div>
+                <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio3()"> Enviar </button>
+            </div>
+            <div id="rN" style="display: block;">
+
+            </div>
+            <div id="rN2" style="display: block"></div>
+
+
+
+        </div>
+        <div id="form4" style="display: none;">
+            <div>
+                <div>
+                    <h2>Calcular el día de pascua entre los años 1990 y 2000</h2>
+                </div>
+                <div class="texts">
+                    <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio4()"> Calcular </button>
+                </div>
+
+
+
+
+            </div>
+            <div id="pascua">
+
+            </div>
+
+
+
+
+
+        </div>
+        <div id="form5" style="display: none;">
+            <div>
+                <div class="texts">
+                    <input type="text" class="text" id="txtanio" placeholder="Año">
+                </div>
+
+            </div>
+            <div>
+                <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio5()"> Enviar </button>
+            </div>
+            <div id="respuestaAnio" style="display: none;">
+                <p> </p>
+                <h2 id="anio"></h2>
+            </div>
+
+        </div>
+        <div id="form6" style="display: none;">
+            <div>
+                <div class="texts">
+                    <input type="text" class="text" id="filas" placeholder="N para cuadrado magico" maxlength="2">
+
+                </div>
+
+            </div>
+            <div>
+                <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio6()"> Enviar </button>
+            </div>
+            <div id="tabla"></div>
+        </div>
+
+        <div id="form7" style="display: none;">
+            <div>
+                <div class="texts">
+
+                    <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio7()"> Obtener </button>
+                </div>
+
+            </div>
+            <div>
+
+            </div>
+            <div id="respuestaM" style="display: block;">
+
+            </div>
+        </div>
+        <div id="form8" style="display: none;">
+            <div>
+                <div class="texts">
+                    <input type="text" class="text" id="txtx" placeholder="e^x">
+
+                </div>
+
+            </div>
+            <div>
+                <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio8()"> Enviar </button>
+            </div>
+            <div id="respuestaserie" style="display: block;">
+
+            </div>
+        </div>
+        <div id="form9" style="display: none;">
+            <div>
+                <div class="texts">
+                    <input type="text" class="text" id="radio" placeholder="radio">
+
+                </div>
+
+            </div>
+            <div>
+                <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio9()"> Enviar </button>
+            </div>
+            <div id="respuestasCirculo" style="display: none;">
+                <p>El área del circulo es: </p>
+                <h2 id="rarea"></h2>
+                <p>El perimetro es: </p>
+                <h2 id="rperimetro"></h2>
+                <p>El diametro es: </p>
+                <h2 id="rdiametro"></h2>
+            </div>
+        </div>
+
+        <div id="form10" style="display: none;">
+            <div>
+                <div class="texts">
+                    <input type="text" class="text" id="numero1" placeholder="número 1">
+                    <input type="text" class="text" id="numero2" placeholder="número 2">
+
+                </div>
+
+            </div>
+            <div>
+                <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio10()"> Enviar </button>
+            </div>
+            <div id="respuestamcd" style="display: none;">
+                <p>El mcd de los dos numeros es: </p>
+                <h2 id="mcd"></h2>
+
+
+            </div>
+        </div>
+
+        <div id="form11" style="display: none;">
+            <div>
+                <div class="texts">
+                    <input type="text" class="text" id="num" placeholder="Número">
+
+                </div>
+
+            </div>
+            <div>
+                <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio11()"> Enviar </button>
+            </div>
+            <div id="respuestaaprox" style="display: none;">
+                <p>El numero aprox es: </p>
+                <h2 id="numeroaprox"></h2>
+
+
+            </div>
+        </div>
+
+        <div id="form13" style="display: none;">
+            <div>
+                <div class="texts">
+                    <input type="text" class="text" id="txtnum" placeholder="numero N">
+
+                </div>
+
+            </div>
+            <div>
+                <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio13()"> Enviar </button>
+            </div>
+            <div id="respuesta" style="display: none;">
+                <p>El resultado de la serie: 1/2+2/2^2+..+n/2^n </p>
+                <h2 id="n"></h2>
+
+
+            </div>
+        </div>
+
+        <div id="form12" style="display: none;">
+            <div>
+                <div class="texts">
+                    <div><input type="text" class="text" id="a" placeholder="a"></div>
+
+                </div>
+
+            </div>
+            <div>
+                <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio12()"> Enviar </button>
+            </div>
+            <div id="respuesta1" style="display: none;">
+                <p>El resultado de la serie: 1/2+1/3+..+1/n </p>
+                <h2 id="n1"></h2>
+
+
+            </div>
+        </div>
+        <div id="form14" style="display: none;">
+            <div>
+                <div class="texts">
+                    <div><input type="text" class="text" id="lineas" placeholder="numero de lineas"></div>
+
+                </div>
+
+            </div>
+            <div>
+                <button class="btnConfirmar" id="btnEnv" href="" onclick="ejercicio14()"> Enviar </button>
+            </div>
+            <div id="rlineas" style="display: block;">
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
